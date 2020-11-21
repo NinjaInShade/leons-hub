@@ -33,6 +33,7 @@
   row-gap: 60px;
   width: fit-content;
   margin: auto;
+  position: relative;
 }
 
 .navigation svg {
