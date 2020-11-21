@@ -8,10 +8,11 @@
   box-sizing: border-box;
 }
 
-body {
+body,
+html {
   background: #212b45;
   color: white;
-  padding: 70px 50px;
+  padding: 70px 20px;
   min-height: 100vh;
   overflow-x: hidden;
 }

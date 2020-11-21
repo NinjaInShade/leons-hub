@@ -61,7 +61,7 @@
 
 .blob {
   position: absolute;
-  z-index: -1;
+  z-index: 2;
   transform-origin: 0 0;
 }
 
@@ -101,7 +101,7 @@
 
 @media (max-width: 620px) {
   .navigation {
-    grid-template-columns: repeat(1, 240px);
+    grid-template-columns: repeat(2, 170px);
     row-gap: 20px;
   }
 
@@ -118,6 +118,23 @@
   .heading h1 {
     font-size: 3rem;
   }
+
+  .navigation svg {
+    font-size: 4em;
+  }
+
+  .navigation {
+    grid-template-columns: repeat(2, 150px);
+  }
+
+  .navigation .card h2 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+  }
+
+  .homepage {
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 400px) {
@@ -130,6 +147,7 @@
   }
 
   .navigation {
-    grid-template-columns: repeat(1, 180px);
+    column-gap: 15px;
+    grid-template-columns: repeat(2, 120px);
   }
 }

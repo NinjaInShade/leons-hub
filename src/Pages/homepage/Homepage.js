@@ -26,13 +26,13 @@ export default function Homepage() {
       </animated.header>
       <animated.section className="navigation" style={fromBottom}>
         <div className="blob-container">
+          <img src={Blob3} alt="blob" className="blob blob3" />
           <Link to="/Wikipedia">
             <Card>
               <i className="fab fa-wikipedia-w"></i>
               <h2>Wikipedia</h2>
             </Card>
           </Link>
-          <img src={Blob3} alt="blob" className="blob blob3" />
         </div>
         <Link to="/To-do">
           <Card>
