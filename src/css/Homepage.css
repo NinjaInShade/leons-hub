@@ -1,0 +1,77 @@
+.homepage {
+  width: 100%;
+  margin-top: 50px;
+}
+
+/* Heading */
+.heading {
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 150px;
+}
+
+.heading h1 {
+  font-size: 5rem;
+  text-align: center;
+  font-weight: 900;
+  width: fit-content;
+}
+
+.heading hr {
+  width: 70%;
+  height: 6px;
+  border-radius: 15px;
+  background-color: #00ceaf;
+}
+
+/* Navigation */
+.navigation {
+  display: grid;
+  grid-template-columns: repeat(3, 240px);
+  column-gap: 80px;
+  row-gap: 60px;
+  width: fit-content;
+  margin: auto;
+}
+
+.navigation svg {
+  font-size: 7em;
+}
+
+.navigation .card h2 {
+  margin-top: 15px;
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+.navigation .card {
+  transition: transform 0.2s ease-in;
+}
+
+.navigation .card:hover {
+  transform: translateY(-15px);
+}
+
+.blob-container {
+  position: relative;
+}
+
+.blob {
+  position: absolute;
+  z-index: -1;
+}
+
+.blob1 {
+  top: 30px;
+  right: -130px;
+}
+
+.blob2 {
+  top: 110px;
+  left: 80px;
+}
+
+.blob3 {
+  left: -80px;
+  top: 170px;
+}

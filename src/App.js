@@ -5,17 +5,19 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./css/App.css";
 
 // Pages
-import Homepage from "./Pages/homepage/Homepage";
-import UnmatchedRoute from "./Pages/homepage/UnmatchedRoute";
+import Homepage from "./pages/homepage/Homepage";
+import UnmatchedRoute from "./pages/homepage/UnmatchedRoute";
 
 function App() {
   return (
     <Router>
       <Switch>
+        {/* Main homepage */}
         <Route path="/" exact>
           <Homepage />
         </Route>
 
+        {/* 404 Route */}
         <Route>
           <UnmatchedRoute />
         </Route>
