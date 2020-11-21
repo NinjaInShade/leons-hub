@@ -20,7 +20,7 @@ export default function UnmatchedRoute() {
   const fromTop = useSpring({ top: "0vh", from: { top: "-20vh" }, config: { ...config.slow } });
   const fromBottom = useSpring({ bottom: "0vh", from: { bottom: "-100vh" }, config: { ...config.slow } });
 
-  let image_paths = [img1, img2, img3, img4, img5, img6, img7, img8];
+  const image_paths = [img1, img2, img3, img4, img5, img6, img7, img8];
 
   let random = Math.floor(Math.random() * image_paths.length);
   let image = image_paths[random];

@@ -1,6 +1,7 @@
 .homepage {
   width: 100%;
   margin-top: 50px;
+  position: relative;
 }
 
 /* Heading */
