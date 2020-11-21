@@ -12,3 +12,7 @@
   cursor: pointer;
   z-index: 1000;
 }
+
+.card:hover {
+  background: #2f3c61;
+}

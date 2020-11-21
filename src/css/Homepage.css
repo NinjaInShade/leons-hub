@@ -59,19 +59,35 @@
 .blob {
   position: absolute;
   z-index: -1;
+  transform-origin: 0 0;
 }
 
 .blob1 {
   top: 30px;
   right: -130px;
+  animation: swinging 3.5s ease-in-out forwards infinite;
 }
 
 .blob2 {
   top: 110px;
   left: 80px;
+  animation: swinging 7s ease-in-out forwards infinite;
 }
 
 .blob3 {
   left: -80px;
   top: 170px;
+  animation: swinging 5s ease-in-out forwards infinite;
+}
+
+@keyframes swinging {
+  0% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
 }
