@@ -7,9 +7,9 @@ import { useSpring, animated, config } from "react-spring";
 import "../.././css/Homepage.css";
 
 // Images
-import Blob1 from "../../resources/svgs/Blob1.svg";
-import Blob2 from "../../resources/svgs/Blob2.svg";
-import Blob3 from "../../resources/svgs/Blob3.svg";
+import Blob1 from "../../resources/images/Blob1.svg";
+import Blob2 from "../../resources/images/Blob2.svg";
+import Blob3 from "../../resources/images/Blob3.svg";
 
 // Components
 import Card from "../.././components/layout/Card";

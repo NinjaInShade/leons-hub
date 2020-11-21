@@ -1,0 +1,54 @@
+.unmatched {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.unmatched h1 {
+  font-size: 3rem;
+  width: fit-content;
+  margin-right: 20%;
+}
+
+.unmatched p {
+  font-size: 1.2rem;
+}
+
+.unmatched a {
+  color: #91a2d1;
+}
+
+.unmatched a:hover {
+  text-decoration: underline;
+}
+
+.unmatched img {
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 80px;
+  padding: 0 30px;
+  transform-origin: 50%;
+  animation: swinging 5s ease-in-out forwards infinite;
+}
+
+@media (max-width: 650px) {
+  .unmatched h1 {
+    font-size: 2rem;
+    margin-right: 0;
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 550px) {
+  .unmatched p {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .unmatched h1 {
+    font-size: 1.5rem;
+  }
+}
