@@ -7,11 +7,13 @@
 
 .unmatched h1 {
   font-size: 3rem;
+  position: relative;
   width: fit-content;
   margin-right: 20%;
 }
 
 .unmatched p {
+  position: relative;
   font-size: 1.2rem;
 }
 
@@ -29,7 +31,8 @@
   margin-top: 80px;
   padding: 0 30px;
   transform-origin: 50%;
-  animation: swinging 5s ease-in-out forwards infinite;
+  position: relative;
+  animation: swinging 10s ease-in-out forwards infinite;
 }
 
 @media (max-width: 650px) {

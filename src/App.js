@@ -16,37 +16,30 @@ function App() {
         <Route path="/" exact>
           <Homepage />
         </Route>
-
         {/* In built wikipedia */}
         <Route path="/Wikipedia" exact>
           <Homepage />
         </Route>
-
         {/* Todo page */}
         <Route path="/To-do" exact>
           <Homepage />
         </Route>
-
         {/* About page */}
         <Route path="/About" exact>
           <Homepage />
         </Route>
-
         {/* Code docs page */}
         <Route path="/Code" exact>
           <Homepage />
         </Route>
-
         {/* Books page */}
         <Route path="/Books" exact>
           <Homepage />
         </Route>
-
         {/* Settings page */}
         <Route path="/Settings" exact>
           <Homepage />
         </Route>
-
         {/* 404 Route */}
         <Route>
           <UnmatchedRoute />
