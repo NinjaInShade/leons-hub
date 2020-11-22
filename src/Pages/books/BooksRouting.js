@@ -12,7 +12,7 @@ export default function BooksRouting() {
       <Route exact path={path}>
         <BooksHomepage />
       </Route>
-      <Route path={`${path}/:bookid`}>
+      <Route path={`${path}/:bookid/:book`}>
         <BooksHomepage />
       </Route>
     </Switch>

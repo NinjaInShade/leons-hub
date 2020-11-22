@@ -21,6 +21,7 @@
 
 .bookshomepage-card {
   max-width: 250px;
+  min-height: 320px;
   margin: 0 15px 30px 15px;
   display: flex;
   flex-direction: column;
@@ -42,12 +43,11 @@
 
 .bookshomepage-card h2 {
   font-size: 1.8rem;
-  white-space: nowrap;
   font-weight: bold;
   margin: 0 0 20px 15px;
 }
 
-.bookshomepage-books-container > * {
+.bookshomepage-books-container > a > * {
   flex-grow: 1;
 }
 
@@ -57,7 +57,7 @@
   }
 
   .bookshomepage-card img {
-    max-width: 200px;
+    max-width: none;
   }
 
   .bookshomepage-card h3 {

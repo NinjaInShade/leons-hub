@@ -1,12 +1,24 @@
 // Libraries
 import React, { useState } from "react";
+import Fuse from "fuse.js";
 
 // CSS
 import "../.././css/Searchbox.css";
 
-export default function Searchbox({ children }) {
+export default function Searchbox({ children, search_queries, callback }) {
   const [focused, setFocused] = useState(false);
   const [searchedTerm, setSearchedTerm] = useState("");
+
+  const options = {
+    keys: ["identifier"],
+  };
+
+  const fuse = new Fuse(search_queries, options);
+
+  function changeHandler(e) {
+    setSearchedTerm(e.target.value);
+    callback(fuse.search(searchedTerm));
+  }
 
   return (
     <div className="searchbox-container">
@@ -17,10 +29,20 @@ export default function Searchbox({ children }) {
         onSubmit={() => console.log("Entered")}
         value={searchedTerm}
         onChange={(e) => {
-          setSearchedTerm(e.target.value);
+          changeHandler(e);
         }}
       />
-      <label style={focused ? { transform: "translate(-10px, -55px)", color: "#00ceaf" } : {}}>{children}</label>
+      <label
+        style={
+          focused
+            ? { transform: "translate(-10px, -55px)", color: "#00ceaf" }
+            : searchedTerm.length > 0
+            ? { transform: "translate(-10px, -55px)", color: "#00ceaf" }
+            : {}
+        }
+      >
+        {children}
+      </label>
       <button type="submit">
         <i className="fas fa-search"></i>
       </button>
