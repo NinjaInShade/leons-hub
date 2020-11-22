@@ -8,13 +8,17 @@
   box-sizing: border-box;
 }
 
-body,
-html {
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
   background: #212b45;
   color: white;
   padding: 70px 20px;
+  height: auto;
   min-height: 100vh;
-  overflow-x: hidden;
 }
 
 @keyframes swinging {

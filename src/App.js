@@ -27,6 +27,7 @@ function App() {
 
   let random = Math.floor(Math.random() * bg_image_paths.length);
   document.querySelector("body").style.backgroundImage = `url(${bg_image_paths[random]})`;
+  document.querySelector("html").style.backgroundImage = `url(${bg_image_paths[random]})`;
 
   return (
     <Router>
