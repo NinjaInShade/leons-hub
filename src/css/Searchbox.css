@@ -1,0 +1,53 @@
+.searchbox-container {
+  display: flex;
+  border-radius: 8px;
+  position: relative;
+}
+
+.searchbox-container input {
+  flex-grow: 1;
+  border-radius: 15px 0 0 15px;
+  padding: 15px 20px;
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #324065;
+  color: #99aad8;
+}
+
+.searchbox-container label {
+  color: #99aad8;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.searchbox-container button {
+  min-width: 60px;
+  width: 6%;
+  height: auto;
+  background-color: #00ceaf;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+}
+
+.searchbox-container button:hover {
+  background-color: #00ceafd3;
+}
+
+.searchbox-container button svg {
+  color: #324065;
+  font-size: 2rem;
+}
+
+@media (max-width: 450px) {
+}

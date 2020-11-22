@@ -103,7 +103,7 @@
 @media (max-width: 620px) {
   .navigation {
     grid-template-columns: repeat(2, 170px);
-    row-gap: 20px;
+    row-gap: 40px;
   }
 
   .heading {
