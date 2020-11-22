@@ -10,9 +10,13 @@
   cursor: pointer;
 }
 
-.bookshomepage .back svg {
+.bookshomepage .back a svg {
   color: #00ceaf;
   font-size: 3rem;
+}
+
+.bookshomepage .back a svg:hover {
+  color: #00ceafd3;
 }
 
 .bookshomepage section > div {

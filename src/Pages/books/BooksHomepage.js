@@ -17,6 +17,7 @@ export default function BooksHomepage() {
   const [foundQueries, setFoundQueries] = useState([]);
 
   const fromTop = useSpring({ top: "0vh", from: { top: "-30vh" }, config: { ...config.slow } });
+  const fromTopBackButton = useSpring({ top: "2vh", from: { top: "-30vh" }, config: { ...config.slow } });
   const fromBottom = useSpring({ bottom: "0vh", from: { bottom: "-100vh" }, config: { ...config.slow } });
 
   function onSearched(found_queries) {
@@ -25,9 +26,11 @@ export default function BooksHomepage() {
 
   return (
     <div className="bookshomepage">
-      <Link to="/" className="back">
-        <i className="fas fa-hand-point-left"></i>
-      </Link>
+      <animated.div className="back" style={fromTopBackButton}>
+        <Link to="/">
+          <i className="fas fa-hand-point-left"></i>
+        </Link>
+      </animated.div>
       <animated.header className="heading" style={fromTop}>
         <h1>Book Portal</h1>
         <hr />
