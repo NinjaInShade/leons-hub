@@ -6,3 +6,66 @@
 .bookshomepage section > div {
   position: relative;
 }
+
+.bookshomepage-searchbox-container {
+  margin-bottom: 50px;
+}
+
+.bookshomepage-books-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.bookshomepage-card {
+  max-width: 250px;
+  margin: 0 15px 30px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.bookshomepage-card img {
+  max-width: 150px;
+  width: 100%;
+  margin-left: 15px;
+  padding-right: 20%;
+}
+
+.bookshomepage-card h3 {
+  color: #99aad8;
+  font-size: 1.2rem;
+}
+
+.bookshomepage-card h2 {
+  font-size: 1.8rem;
+  white-space: nowrap;
+  font-weight: bold;
+  margin: 0 0 20px 15px;
+}
+
+.bookshomepage-books-container > * {
+  flex-grow: 1;
+}
+
+@media (max-width: 600px) {
+  .bookshomepage-card {
+    max-width: none;
+  }
+
+  .bookshomepage-card img {
+    max-width: 200px;
+  }
+
+  .bookshomepage-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .bookshomepage-card h2 {
+    font-size: 2.2rem;
+    white-space: normal;
+  }
+}

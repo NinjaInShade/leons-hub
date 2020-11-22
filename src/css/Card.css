@@ -1,6 +1,6 @@
 .card {
-  min-width: 100px;
   min-height: 220px;
+  min-width: 100px;
   border-radius: 15px;
   padding: 20px;
   display: flex;
@@ -12,8 +12,10 @@
   cursor: pointer;
   z-index: 1000;
   position: relative;
+  transition: transform 0.2s ease-in;
 }
 
 .card:hover {
   background: #2f3c61;
+  transform: translateY(-15px);
 }

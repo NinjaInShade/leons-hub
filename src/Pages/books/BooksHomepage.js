@@ -5,6 +5,9 @@ import { useSpring, animated, config } from "react-spring";
 // CSS
 import "../../css/BooksHomepage.css";
 
+// Images
+import DavidGogginsCantHurtMeCover from "../../resources/book_covers/CantHurtMe.jpg";
+
 // Components
 import Card from "../.././components/layout/Card";
 import Searchbox from "../.././components/general/Searchbox";
@@ -20,9 +23,36 @@ export default function BooksHomepage() {
         <hr />
       </animated.header>
       <section>
-        <animated.div style={fromTop}>
+        <animated.div style={fromTop} className="bookshomepage-searchbox-container">
           <Searchbox>Search for a book...</Searchbox>
         </animated.div>
+        <div className="bookshomepage-books-container">
+          <Card className="bookshomepage-card">
+            <h3>David goggins!</h3>
+            <h2>Can't Hurt Me</h2>
+            <img src={DavidGogginsCantHurtMeCover} alt="Cant Hurt Me by David Goggins book cover" />
+          </Card>
+          <Card className="bookshomepage-card">
+            <h3>David goggins!</h3>
+            <h2>Can't Hurt Me</h2>
+            <img src={DavidGogginsCantHurtMeCover} alt="Cant Hurt Me by David Goggins book cover" />
+          </Card>
+          <Card className="bookshomepage-card">
+            <h3>David goggins!</h3>
+            <h2>Can't Hurt Me</h2>
+            <img src={DavidGogginsCantHurtMeCover} alt="Cant Hurt Me by David Goggins book cover" />
+          </Card>
+          <Card className="bookshomepage-card">
+            <h3>David goggins!</h3>
+            <h2>Can't Hurt Me</h2>
+            <img src={DavidGogginsCantHurtMeCover} alt="Cant Hurt Me by David Goggins book cover" />
+          </Card>
+          <Card className="bookshomepage-card">
+            <h3>David goggins!</h3>
+            <h2>Can't Hurt Me</h2>
+            <img src={DavidGogginsCantHurtMeCover} alt="Cant Hurt Me by David Goggins book cover" />
+          </Card>
+        </div>
       </section>
     </div>
   );
