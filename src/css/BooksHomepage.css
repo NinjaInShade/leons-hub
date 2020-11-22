@@ -3,6 +3,18 @@
   margin: auto;
 }
 
+.bookshomepage .back {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+
+.bookshomepage .back svg {
+  color: #00ceaf;
+  font-size: 3rem;
+}
+
 .bookshomepage section > div {
   position: relative;
 }

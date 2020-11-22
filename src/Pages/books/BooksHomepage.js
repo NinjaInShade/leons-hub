@@ -6,56 +6,41 @@ import { useSpring, animated, config } from "react-spring";
 // CSS
 import "../../css/BooksHomepage.css";
 
-// Images
-import DavidGogginsCantHurtMeCover from "../../resources/book_covers/CantHurtMe.jpg";
-import RobertKiyosakiRichDadPoorDad from "../../resources/book_covers/RichDadPoorDad.jpg";
-
 // Components
 import Card from "../.././components/layout/Card";
 import Searchbox from "../.././components/general/Searchbox";
 
+// Other
+import { book_search_queries } from "../.././SearchArrays";
+
 export default function BooksHomepage() {
   const [foundQueries, setFoundQueries] = useState([]);
-  const search_queries = [
-    {
-      identifier: "David Goggins - Can't Hurt me",
-      url: "/Books/01/DavidGogginsCantHurtMe",
-      author: "David Goggins",
-      title: "Can't Hurt Me",
-      img: DavidGogginsCantHurtMeCover,
-    },
-    {
-      identifier: "Robert T. Kiyosaki - Rich Dad Poor Dad",
-      url: "/Books/02/RobertKiyosakiRichDadPoorDad",
-      author: "Robert T. Kiyosaki",
-      title: "Rich Dad Poor Dad",
-      img: RobertKiyosakiRichDadPoorDad,
-    },
-  ];
 
   const fromTop = useSpring({ top: "0vh", from: { top: "-30vh" }, config: { ...config.slow } });
   const fromBottom = useSpring({ bottom: "0vh", from: { bottom: "-100vh" }, config: { ...config.slow } });
 
   function onSearched(found_queries) {
     setFoundQueries(found_queries);
-    console.log(found_queries);
   }
 
   return (
     <div className="bookshomepage">
+      <Link to="/" className="back">
+        <i className="fas fa-hand-point-left"></i>
+      </Link>
       <animated.header className="heading" style={fromTop}>
         <h1>Book Portal</h1>
         <hr />
       </animated.header>
       <section>
         <animated.div style={fromTop} className="bookshomepage-searchbox-container">
-          <Searchbox search_queries={search_queries} callback={onSearched}>
+          <Searchbox search_queries={book_search_queries} callback={onSearched}>
             Search for a book...
           </Searchbox>
         </animated.div>
         <animated.div className="bookshomepage-books-container" style={fromBottom}>
           {foundQueries.length === 0
-            ? search_queries.sort().map((book) => {
+            ? book_search_queries.sort().map((book) => {
                 return (
                   <Link to={book.url} key={book.identifier}>
                     <Card className="bookshomepage-card">
