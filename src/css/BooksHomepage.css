@@ -37,30 +37,30 @@
 
 .bookshomepage-card {
   max-width: 250px;
-  min-height: 320px;
+  min-height: 400px;
   margin: 0 15px 30px 15px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .bookshomepage-card img {
   max-width: 150px;
   width: 100%;
-  margin-left: 15px;
-  padding-right: 20%;
 }
 
 .bookshomepage-card h3 {
   color: #99aad8;
   font-size: 1.2rem;
+  text-align: center;
 }
 
 .bookshomepage-card h2 {
   font-size: 1.8rem;
   font-weight: bold;
-  margin: 0 0 20px 15px;
+  text-align: center;
+  margin: 0 0 20px 0;
 }
 
 .bookshomepage-books-container > a > * {
@@ -82,6 +82,5 @@
 
   .bookshomepage-card h2 {
     font-size: 2.2rem;
-    white-space: normal;
   }
 }
