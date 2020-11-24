@@ -1,4 +1,6 @@
 // Images
+
+// Books
 import DavidGogginsCantHurtMeCover from "./resources/book_covers/CantHurtMe.jpg";
 import RobertKiyosakiRichDadPoorDad from "./resources/book_covers/RichDadPoorDad.jpg";
 import JamesClearAtomicHabits from "./resources/book_covers/AtomicHabits.jpg";
@@ -9,6 +11,11 @@ import AntMiddletonZeroNegativity from "./resources/book_covers/ZeroNegativity.j
 import AntMiddletonFirstManIn from "./resources/book_covers/FirstManIn.jpg";
 import RossEdgleyArtOfResilience from "./resources/book_covers/ArtOfResilience.jpg";
 import MarcusLutrellLoneSurvivor from "./resources/book_covers/LoneSurvivor.jpg";
+
+// Code
+import design from "./resources/images/design.svg";
+import html5 from "./resources/images/html5.svg";
+import javascript from "./resources/images/javascript.svg";
 
 export const book_search_queries = [
   {
@@ -80,5 +87,29 @@ export const book_search_queries = [
     author: "Marcus Lutrell",
     title: "Lone Survivor",
     img: MarcusLutrellLoneSurvivor,
+  },
+];
+
+export const code_search_queries = [
+  {
+    identifier: "Design - Whitespace",
+    url: "/Code/01/DesignWhitespace",
+    topic: "Design -> Whitespace",
+    title: "How to add whitespace",
+    img: design,
+  },
+  {
+    identifier: "Html 5 - Tags",
+    url: "/Code/02/html5tags",
+    topic: "Html5 -> Tags",
+    title: "How to use tags",
+    img: html5,
+  },
+  {
+    identifier: "Javascript - Functions",
+    url: "/Code/03/JavascriptFunctions",
+    topic: "Javascript -> Functions",
+    title: "How to write functions",
+    img: javascript,
   },
 ];

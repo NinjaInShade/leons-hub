@@ -7,6 +7,7 @@ import { useSpring, animated, config } from "react-spring";
 import "../../css/BooksHomepage.css";
 
 // Components
+import Page from "../../components/layout/Page";
 import Card from "../.././components/layout/Card";
 import Searchbox from "../.././components/general/Searchbox";
 
@@ -17,7 +18,6 @@ export default function BooksHomepage() {
   const [foundQueries, setFoundQueries] = useState([]);
 
   const fromTop = useSpring({ top: "0vh", from: { top: "-30vh" }, config: { ...config.slow } });
-  const fromTopBackButton = useSpring({ top: "2vh", from: { top: "-30vh" }, config: { ...config.slow } });
   const fromBottom = useSpring({ bottom: "0vh", from: { bottom: "-100vh" }, config: { ...config.slow } });
 
   function onSearched(found_queries) {
@@ -25,16 +25,7 @@ export default function BooksHomepage() {
   }
 
   return (
-    <div className="bookshomepage">
-      <animated.div className="back" style={fromTopBackButton}>
-        <Link to="/">
-          <i className="fas fa-hand-point-left"></i>
-        </Link>
-      </animated.div>
-      <animated.header className="heading" style={fromTop}>
-        <h1>Book Portal</h1>
-        <hr />
-      </animated.header>
+    <Page name="bookshomepage" heading="Book Portal">
       <section>
         <animated.div style={fromTop} className="bookshomepage-searchbox-container">
           <Searchbox search_queries={book_search_queries} callback={onSearched}>
@@ -67,6 +58,6 @@ export default function BooksHomepage() {
               })}
         </animated.div>
       </section>
-    </div>
+    </Page>
   );
 }

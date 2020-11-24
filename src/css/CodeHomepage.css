@@ -1,0 +1,29 @@
+.codehomepage-searchbox-container {
+  margin-bottom: 50px;
+}
+
+.codehomepage-code-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.codehomepage-code-container > a > * {
+  flex-grow: 1;
+}
+
+.codehomepage-card {
+  min-height: 350px;
+}
+
+@media (max-width: 600px) {
+  .codehomepage-code-container a {
+    width: 100%;
+  }
+
+  .codehomepage-card img {
+    max-width: 200px;
+  }
+}

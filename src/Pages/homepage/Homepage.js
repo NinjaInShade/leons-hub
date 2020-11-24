@@ -13,17 +13,13 @@ import Blob3 from "../../resources/images/Blob3.svg";
 
 // Components
 import Card from "../.././components/layout/Card";
+import Page from "../.././components/layout/Page";
 
 export default function Homepage() {
-  const fromTop = useSpring({ top: "0vh", from: { top: "-20vh" }, config: { ...config.slow } });
   const fromBottom = useSpring({ bottom: "0vh", from: { bottom: "-100vh" }, config: { ...config.slow } });
 
   return (
-    <div className="homepage">
-      <animated.header className="heading" style={fromTop}>
-        <h1>Leon's Portal</h1>
-        <hr />
-      </animated.header>
+    <Page name="homepage" heading="Leon's Portal">
       <animated.section className="navigation" style={fromBottom}>
         <div className="blob-container">
           <img src={Blob3} alt="blob" className="blob blob3" />
@@ -71,6 +67,6 @@ export default function Homepage() {
           </Card>
         </Link>
       </animated.section>
-    </div>
+    </Page>
   );
 }

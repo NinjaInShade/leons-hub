@@ -1,33 +1,8 @@
 .homepage {
-  width: 100%;
   margin-top: 50px;
-  position: relative;
   margin-bottom: 60px;
 }
 
-/* Heading */
-.heading {
-  width: fit-content;
-  margin: auto;
-  margin-bottom: 150px;
-  position: relative;
-}
-
-.heading h1 {
-  font-size: 5rem;
-  text-align: left;
-  font-weight: 900;
-  width: fit-content;
-}
-
-.heading hr {
-  width: 70%;
-  height: 6px;
-  border-radius: 15px;
-  background-color: #00ceaf;
-}
-
-/* Navigation */
 .navigation {
   display: grid;
   grid-template-columns: repeat(3, 240px);
@@ -105,21 +80,9 @@
     grid-template-columns: repeat(2, 170px);
     row-gap: 40px;
   }
-
-  .heading {
-    margin-bottom: 100px;
-  }
-
-  .heading h1 {
-    font-size: 4rem;
-  }
 }
 
 @media (max-width: 500px) {
-  .heading h1 {
-    font-size: 3rem;
-  }
-
   .navigation svg {
     font-size: 4em;
   }
@@ -139,14 +102,6 @@
 }
 
 @media (max-width: 400px) {
-  .heading {
-    margin-bottom: 70px;
-  }
-
-  .heading h1 {
-    font-size: 2rem;
-  }
-
   .navigation {
     column-gap: 15px;
     grid-template-columns: repeat(2, 120px);

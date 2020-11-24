@@ -1,0 +1,58 @@
+.back {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+
+.back a svg {
+  color: #00ceaf;
+  font-size: 3rem;
+}
+
+.heading {
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 150px;
+  position: relative;
+}
+
+.heading h1 {
+  font-size: 5rem;
+  text-align: left;
+  font-weight: 900;
+  width: fit-content;
+}
+
+.heading hr {
+  width: 70%;
+  height: 6px;
+  border-radius: 15px;
+  background-color: #00ceaf;
+}
+
+@media (max-width: 620px) {
+  .heading {
+    margin-bottom: 100px;
+  }
+
+  .heading h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .heading h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .heading {
+    margin-bottom: 50px;
+  }
+
+  .heading h1 {
+    font-size: 2rem;
+  }
+}

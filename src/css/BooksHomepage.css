@@ -1,25 +1,15 @@
-.bookshomepage section {
+.bookshomepage section,
+.codehomepage section {
   max-width: 1100px;
   margin: auto;
-}
-
-.bookshomepage .back {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  cursor: pointer;
-}
-
-.bookshomepage .back a svg {
-  color: #00ceaf;
-  font-size: 3rem;
 }
 
 .bookshomepage .back a svg:hover {
   color: #00ceafd3;
 }
 
-.bookshomepage section > div {
+.bookshomepage section > div,
+.codehomepage section > div {
   position: relative;
 }
 
@@ -35,7 +25,12 @@
   flex-wrap: wrap;
 }
 
-.bookshomepage-card {
+.bookshomepage-books-container > a > * {
+  flex-grow: 1;
+}
+
+.bookshomepage-card,
+.codehomepage-card {
   max-width: 250px;
   min-height: 400px;
   margin: 0 15px 30px 15px;
@@ -45,42 +40,46 @@
   align-items: center;
 }
 
-.bookshomepage-card img {
+.bookshomepage-card img,
+.codehomepage-card img {
   max-width: 150px;
   width: 100%;
 }
 
-.bookshomepage-card h3 {
+.bookshomepage-card h3,
+.codehomepage-card h3 {
   color: #99aad8;
   font-size: 1.2rem;
   text-align: center;
 }
 
-.bookshomepage-card h2 {
+.bookshomepage-card h2,
+.codehomepage-card h2 {
   font-size: 1.8rem;
   font-weight: bold;
   text-align: center;
   margin: 0 0 20px 0;
 }
 
-.bookshomepage-books-container > a > * {
-  flex-grow: 1;
-}
-
 @media (max-width: 600px) {
-  .bookshomepage-card {
+  .bookshomepage-card,
+  .codehomepage-card {
+    max-width: none;
+    margin: 0 0 30px 0;
+  }
+
+  .bookshomepage-card img,
+  .codehomepage-card img {
     max-width: none;
   }
 
-  .bookshomepage-card img {
-    max-width: none;
-  }
-
-  .bookshomepage-card h3 {
+  .bookshomepage-card h3,
+  .codehomepage-card h3 {
     font-size: 1.4rem;
   }
 
-  .bookshomepage-card h2 {
+  .bookshomepage-card h2,
+  .codehomepage-card h2 {
     font-size: 2.2rem;
   }
 }

@@ -22,6 +22,7 @@ import bg_12 from "./resources/images/bg_12.svg";
 import Homepage from "./pages/homepage/Homepage";
 import UnmatchedRoute from "./pages/homepage/UnmatchedRoute";
 import BooksRoutes from "./pages/books/BooksRouting";
+import CodeRoutes from "./pages/code/CodeRouting";
 
 function App() {
   const bg_image_paths = [bg_1, bg_2, bg_3, bg_4, bg_5, bg_6, bg_7, bg_8, bg_9, bg_10, bg_11, bg_12];
@@ -50,8 +51,8 @@ function App() {
           <Homepage />
         </Route>
         {/* Code docs page */}
-        <Route path="/Code" exact>
-          <Homepage />
+        <Route path="/Code">
+          <CodeRoutes />
         </Route>
         {/* Books page */}
         <Route path="/Books">
