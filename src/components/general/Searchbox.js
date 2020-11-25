@@ -17,7 +17,7 @@ export default function Searchbox({ children, search_queries, callback }) {
 
   function changeHandler(e) {
     setSearchedTerm(e.target.value);
-    callback(fuse.search(searchedTerm));
+    callback(fuse.search(e.target.value));
   }
 
   return (

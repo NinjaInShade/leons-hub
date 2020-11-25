@@ -16,6 +16,9 @@ import MarcusLutrellLoneSurvivor from "./resources/book_covers/LoneSurvivor.jpg"
 import design from "./resources/images/design.svg";
 import html5 from "./resources/images/html5.svg";
 import javascript from "./resources/images/javascript.svg";
+import css from "./resources/images/css3.svg";
+import cplusplus from "./resources/images/cplusplus.svg";
+import python from "./resources/images/python.svg";
 
 export const book_search_queries = [
   {
@@ -111,5 +114,26 @@ export const code_search_queries = [
     topic: "Javascript -> Functions",
     title: "How to write functions",
     img: javascript,
+  },
+  {
+    identifier: "CSS 3 - Flexbox",
+    url: "/Code/04/CSSFlexbox",
+    topic: "CSS3 -> Flexbox",
+    title: "How to utilise flexbox",
+    img: css,
+  },
+  {
+    identifier: "C++ - Classes",
+    url: "/Code/05/C++Classes",
+    topic: "C++ -> Classes",
+    title: "Intro to writing classes",
+    img: cplusplus,
+  },
+  {
+    identifier: "Python - List comprehension",
+    url: "/Code/05/PythonListComprehension",
+    topic: "Python -> List Comprehension",
+    title: "Using list comprehension",
+    img: python,
   },
 ];

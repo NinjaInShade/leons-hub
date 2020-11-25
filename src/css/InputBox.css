@@ -1,0 +1,28 @@
+.inputbox-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.inputbox-container label {
+  color: #fff;
+  font-size: 1.4rem;
+  margin: 0 0 10px 8px;
+}
+
+.inputbox-container input {
+  padding: 15px;
+  outline: none;
+  border-radius: 15px;
+  background: #212b45;
+  color: #99aad8;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.inputbox-container input::placeholder {
+  color: #99aad8;
+}

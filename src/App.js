@@ -23,6 +23,7 @@ import Homepage from "./pages/homepage/Homepage";
 import UnmatchedRoute from "./pages/homepage/UnmatchedRoute";
 import BooksRoutes from "./pages/books/BooksRouting";
 import CodeRoutes from "./pages/code/CodeRouting";
+import Settings from "./pages/settings/Settings";
 
 function App() {
   const bg_image_paths = [bg_1, bg_2, bg_3, bg_4, bg_5, bg_6, bg_7, bg_8, bg_9, bg_10, bg_11, bg_12];
@@ -50,6 +51,10 @@ function App() {
         <Route path="/About" exact>
           <Homepage />
         </Route>
+        {/* Settings page */}
+        <Route path="/Settings" exact>
+          <Settings />
+        </Route>
         {/* Code docs page */}
         <Route path="/Code">
           <CodeRoutes />
@@ -57,10 +62,6 @@ function App() {
         {/* Books page */}
         <Route path="/Books">
           <BooksRoutes />
-        </Route>
-        {/* Settings page */}
-        <Route path="/Settings" exact>
-          <Homepage />
         </Route>
         {/* 404 Route */}
         <Route>
