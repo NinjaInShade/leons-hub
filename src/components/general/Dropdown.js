@@ -30,7 +30,7 @@ export default function Dropdown({ heading, options, callback }) {
           <i class="fas fa-caret-down"></i>
         </div>
       </button>
-      <ul className="dropdown-items" style={opened ? { maxHeight: "300px" } : { maxHeight: "0px" }}>
+      <ul className="dropdown-items" style={opened ? { maxHeight: "120px" } : { maxHeight: "0px" }}>
         {options.map((item, index) => {
           return (
             <li

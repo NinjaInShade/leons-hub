@@ -1,5 +1,5 @@
 // Libraries
-import React, { useState } from "react";
+import React from "react";
 
 // CSS
 import "../../css/InputBox.css";

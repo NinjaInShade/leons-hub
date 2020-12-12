@@ -23,19 +23,19 @@ export default function Homepage() {
       <animated.section className="navigation" style={fromBottom}>
         <div className="blob-container">
           <img src={Blob3} alt="blob" className="blob blob3" />
-          <Link to="/Wikipedia">
+          <a href="https://sitebuilder-66d12.web.app/" target="_blank" rel="noreferrer">
             <Card>
-              <i className="fab fa-wikipedia-w"></i>
-              <h2>Wikipedia</h2>
+              <span class="iconify" data-inline="false" data-icon="ic:baseline-build"></span>
+              <h2>Site builder</h2>
             </Card>
-          </Link>
+          </a>
         </div>
-        <Link to="/To-do">
+        <a href="https://todoapp-48ccc.web.app/" rel="noreferrer" target="_blank">
           <Card>
             <span className="iconify" data-inline="false" data-icon="ri:calendar-todo-fill"></span>
             <h2>To-Do</h2>
           </Card>
-        </Link>
+        </a>
         <div className="blob-container">
           <Link to="/About">
             <Card>

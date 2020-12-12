@@ -39,14 +39,6 @@ function App() {
         <Route path="/" exact>
           <Homepage />
         </Route>
-        {/* In built wikipedia */}
-        <Route path="/Wikipedia" exact>
-          <Homepage />
-        </Route>
-        {/* Todo page */}
-        <Route path="/To-do" exact>
-          <Homepage />
-        </Route>
         {/* About page */}
         <Route path="/About" exact>
           <Homepage />
