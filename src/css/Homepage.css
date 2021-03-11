@@ -1,34 +1,19 @@
 .homepage {
-  margin-top: 50px;
-  margin-bottom: 60px;
+  margin: 50px 0;
 }
 
 .navigation {
-  display: grid;
-  grid-template-columns: repeat(3, 240px);
-  column-gap: 80px;
-  row-gap: 60px;
-  width: fit-content;
-  margin: auto;
   position: relative;
+  width: fit-content;
+  display: grid;
+  margin: auto;
+  grid-template-columns: repeat(3, 250px);
+  column-gap: 60px;
+  row-gap: 60px;
 }
 
-.navigation svg {
-  font-size: 7em;
-}
-
-.navigation .card h2 {
-  margin-top: 15px;
-  font-weight: normal;
-  font-size: 2rem;
-}
-
-.navigation .card {
-  transition: transform 0.2s ease-in;
-}
-
-.navigation .card:hover {
-  transform: translateY(-15px);
+.navigation-icon {
+  font-size: 6rem;
 }
 
 .blob-container {
@@ -59,6 +44,17 @@
   animation: swinging 5s ease-in-out forwards infinite;
 }
 
+.navigation-text {
+  font-weight: 400;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 2rem;
+}
+
+.navigation-card {
+  transition: transform 0.2s ease-in;
+}
+
 @media (max-width: 1200px) {
   .navigation {
     grid-template-columns: repeat(2, 240px);
@@ -69,30 +65,24 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .navigation {
-    column-gap: 30px;
-  }
-}
-
-@media (max-width: 620px) {
-  .navigation {
-    grid-template-columns: repeat(2, 170px);
+    grid-template-columns: repeat(2, 200px);
     row-gap: 40px;
+    column-gap: 40px;
   }
 }
 
 @media (max-width: 500px) {
-  .navigation svg {
-    font-size: 4em;
+  .navigation-icon {
+    font-size: 4rem;
   }
 
   .navigation {
     grid-template-columns: repeat(2, 150px);
   }
 
-  .navigation .card h2 {
-    margin-top: 15px;
+  .navigation-text {
     font-size: 1.2rem;
   }
 
@@ -103,7 +93,8 @@
 
 @media (max-width: 400px) {
   .navigation {
-    column-gap: 15px;
     grid-template-columns: repeat(2, 120px);
+    column-gap: 20px;
+    row-gap: 20px
   }
 }
