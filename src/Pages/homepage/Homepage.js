@@ -1,22 +1,20 @@
-// Libraries
-import React from "react";
-import { Link } from "react-router-dom";
 import { useSpring, animated, config } from "react-spring";
-
-// CSS
-import "../.././css/Homepage.css";
-
-// Images
+import { Link } from "react-router-dom";
+import React from "react";
 import Blob1 from "../../resources/images/Blob1.svg";
 import Blob2 from "../../resources/images/Blob2.svg";
 import Blob3 from "../../resources/images/Blob3.svg";
-
-// Components
 import Card from "../.././components/layout/Card";
 import Page from "../.././components/layout/Page";
 
+import "../.././css/Homepage.css";
+
 export default function Homepage() {
-  const fromBottom = useSpring({ bottom: "0vh", from: { bottom: "-100vh" }, config: { ...config.slow } });
+  const fromBottom = useSpring({
+    bottom: "0vh",
+    from: { bottom: "-100vh" },
+    config: { ...config.slow },
+  });
 
   return (
     <Page name="homepage" heading="Leon's Portal">

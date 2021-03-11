@@ -1,58 +1,60 @@
+.page {
+  padding: 20px;
+}
+
 .back {
   position: absolute;
   top: 20px;
   left: 20px;
-  cursor: pointer;
 }
 
-.back a svg {
-  color: #00ceaf;
+.back-icon {
+  color: var(--green-400);
   font-size: 3rem;
 }
 
-.heading {
+.main {
   width: fit-content;
-  margin: auto;
-  margin-bottom: 130px;
   position: relative;
+  margin: 0 auto 120px auto;
 }
 
-.heading h1 {
-  font-size: 5rem;
+.main-text {
   text-align: left;
-  font-weight: 900;
-  width: fit-content;
+  color: var(--neutral-100);
+  font-size: 5rem;
+  font-weight: 700;
 }
 
-.heading hr {
+.main hr {
+  background-color: var(--green-400);
   width: 70%;
   height: 6px;
   border-radius: 15px;
-  background-color: #00ceaf;
 }
 
-@media (max-width: 620px) {
-  .heading {
-    margin-bottom: 100px;
+@media (max-width: 600px) {
+  .main {
+    margin-bottom: 80px;
   }
 
-  .heading h1 {
+  .main-text {
     font-size: 4rem;
   }
 }
 
 @media (max-width: 500px) {
-  .heading h1 {
+  .main-text {
     font-size: 3rem;
   }
 }
 
 @media (max-width: 400px) {
-  .heading {
+  .main {
     margin-bottom: 50px;
   }
 
-  .heading h1 {
+  .main-text {
     font-size: 2rem;
   }
 }
